@@ -11,10 +11,10 @@ public class Loops {
         public void Switch_loop (int num1) {
           switch (num1) {
               case 1:
-                  System.out.println("The number is 1");
+                  System.out.println("The number is 1 case");
                   break;
               case 2:
-                  System.out.println("The number is 2");
+                  System.out.println("The number is 2 case");
                   break;
               default:
                   System.out.println("This happens if any case is true");

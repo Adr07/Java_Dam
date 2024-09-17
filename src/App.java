@@ -17,26 +17,26 @@ public class App {
         System.out.println("Hello, World!");
 
         // Create Class
-        OperationA operationA = new OperationA();
+        calculate cal = new calculate();
         Loops loops = new Loops();
-
+        
         //Operations
-        operationA.Arithmeticint(num1, num2);
+        int res = cal.pot(2, 3);
+        System.out.println("The result is: " + res);
+
+        //Sentences
+        // and (&&), or (||)
+        
+        if (num1 == num2) {
+        System.out.println(true);
+        } else {
+            System.out.println("Is false");
+        }
 
         // loops
         loops.While_loop(num1, num2);
+        loops.Switch_loop(num1);
     }
-
-     public static class OperationA {
-        public void Arithmeticint (int num1, int num2) {
-            //Arithmetic operation
-            calculate cal = new calculate();
-            int res = cal.pot(2, 3);
-
-             System.out.println("The result is: " + res);
-        };
-    };
-
 }
 
 
