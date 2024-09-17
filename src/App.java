@@ -4,6 +4,9 @@ public class App {
         calculate cal = new calculate();
 
         int res = cal.pot(2, 3);
+
         System.out.println("Hello, World!");
+
+        System.out.println("The result is: "+res);
     }
 }

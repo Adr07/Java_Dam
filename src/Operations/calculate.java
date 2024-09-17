@@ -17,7 +17,7 @@ public class calculate {
 
   public int pot(int num1, int exp) {
     
-    for (int i = 0 ;i < exp ;i++){
+    for (int i = 2 ;i < exp ;i++){
       num1 *= num1;
     }
     return num1;
