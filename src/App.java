@@ -3,19 +3,19 @@
 
 //Main Class App for Java Proyect
 
-import Operations.calculate;
-import Operations.Loops;
-
+// import Operations.calculate;
+// import Operations.Loops;
+import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) throws Exception {
         // pblic varibles
         int num1 = 1;
         int num2 = 10;
-
+        
         //Print Hello World!
         System.out.println("Hello, World!");
-
+        
         // Create Class
         // calculate cal = new calculate();
         // Loops loops = new Loops();
@@ -49,8 +49,30 @@ public class App {
         array_Objects[4] = 'a';
         
         //Print element and type
+        //For each
         for (Object object : array_Objects) {
-            System.out.println("The element "+object+" is type "+object.getClass().getSimpleName());
+            System.out.println("The element " + object + " is type " + object.getClass().getSimpleName());
+        }
+
+        String[] array = { "Juan", "Luis", "María", "Carlos", "Ana" };
+
+        boolean found = false;
+        
+        for (String name : array) {
+            if (name.equals("Juan")) {
+                found = true;
+            }
+        }
+
+        if (found) {
+            System.out.println("Juan is in the array");
+        } else {
+            System.out.println("Juan is not in the array");
+        }
+        
+        Arrays.sort(array);
+        for (String name : array) {
+            System.out.println(name);
         }
     }
 }
