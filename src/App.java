@@ -7,6 +7,11 @@
 // import Operations.Loops;
 import java.util.Arrays;
 
+//Para diccionarios
+// Diccionarios
+import java.util.HashMap;
+import java.util.Map;
+
 public class App {
     public static void main(String[] args) throws Exception {
         // pblic varibles
@@ -74,5 +79,15 @@ public class App {
         for (String name : array) {
             System.out.println(name);
         }
+
+        // Diccionarios
+
+        Map<String, Integer> dictionary = new HashMap<>();
+
+        dictionary.put("apple", 1);
+
+        System.out.println(dictionary.entrySet());
+
+        System.out.println("Value for apple: " + dictionary.get("apple"));
     }
 }
