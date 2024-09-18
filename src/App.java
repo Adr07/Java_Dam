@@ -12,23 +12,23 @@ public class App {
         // pblic varibles
         int num1 = 1;
         int num2 = 10;
-        
-        //Print Hello World!
+
+        // Print Hello World!
         System.out.println("Hello, World!");
-        
+
         // Create Class
         // calculate cal = new calculate();
         // Loops loops = new Loops();
-        
-        //Operations
+
+        // Operations
         // int res = cal.pot(2, 3);
         // System.out.println("The result is: " + res);
 
-        //Sentences
+        // Sentences
         // and (&&), or (||)
-        
+
         if (num1 == num2) {
-        System.out.println(true);
+            System.out.println(true);
         } else {
             System.out.println("Is false");
         }
@@ -37,19 +37,19 @@ public class App {
         // loops.While_loop(num1, num2);
         // loops.Switch_loop(num1);
 
-        //Arrays
+        // Arrays
         Object[] array_Objects = new Object[5];
 
-        //It can store any type of data
+        // It can store any type of data
 
         array_Objects[0] = 1;
         array_Objects[1] = "Manuel";
         array_Objects[2] = 2.35;
         array_Objects[3] = true;
         array_Objects[4] = 'a';
-        
-        //Print element and type
-        //For each
+
+        // Print element and type
+        // For each
         for (Object object : array_Objects) {
             System.out.println("The element " + object + " is type " + object.getClass().getSimpleName());
         }
@@ -57,7 +57,7 @@ public class App {
         String[] array = { "Juan", "Luis", "María", "Carlos", "Ana" };
 
         boolean found = false;
-        
+
         for (String name : array) {
             if (name.equals("Juan")) {
                 found = true;
@@ -69,12 +69,10 @@ public class App {
         } else {
             System.out.println("Juan is not in the array");
         }
-        
+
         Arrays.sort(array);
         for (String name : array) {
             System.out.println(name);
         }
     }
 }
-
-
